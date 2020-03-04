@@ -1,1 +1,1 @@
-# SinteticDevice
+# SynteticDevice
