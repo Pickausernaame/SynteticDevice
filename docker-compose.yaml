@@ -1,0 +1,32 @@
+version: '3'
+services:
+  database:
+    container_name: syntetic_device_db
+    build: ./Database/
+    ports:
+    - "5000:5000"
+    - "5001:5432"
+
+#  gorush:
+#    container_name: gorush
+#
+#    ports:
+#      - "8088:8088"
+#
+#  ambitine:
+#    container_name: ambitine
+#    build: .
+#    ports:
+#      - "9090:9090"
+#    environment:
+#      P_HOST: postgres
+#      P_LOGIN: "${DB_LOGIN}"
+#      P_PASSWORD: "${DB_PASS}"
+#      P_DB: "${DB_NAME}"
+#      P_PORT: "${DB_PORT}"
+#      INFURA_KEY: "${INFURA_KEY}"
+#      STATE: "debug"
+#    #      STATE: "prod"
+#    depends_on:
+#      - postgres
+#

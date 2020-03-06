@@ -33,7 +33,7 @@ func (p *Packet) mock() {
 }
 
 func main() {
-	opts := mqtt.NewClientOptions().AddBroker("tcp://localhost:1883")
+	opts := mqtt.NewClientOptions().AddBroker("tcp://localhost:1884")
 	c := mqtt.NewClient(opts)
 	if token := c.Connect(); token.Wait() && token.Error() != nil {
 		panic(token.Error())
